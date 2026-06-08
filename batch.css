@@ -1,69 +1,101 @@
 body {
-    background-color: lightblue;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 192, 192);
+    background-color: rgb(71, 63, 63);
+    font-family: Arial, sans-serif;
 }
 
-p {
-    font-style: italic;
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-/*img { 
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-}
-    */
-
-video {
-    width: 500px;
-    height: 500px;
-}
-
-ol {
-    list-style-type: upper-roman;
-}
-
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
-}
-
-h1 {
-    padding: 50px;
-    border: 20px solid green;
-}
-
-button {
     padding: 10px;
 }
 
-button:hover {
-    background-color: black;
-    color: white;
-    border-radius: 5px;
+h1 {
+    padding: 20px;
+    border: 5px solid white;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-}
-.car{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-/*
-#car1{
-    grid-row: 1/2;
 
+button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
 }
-#car2{
-    grid-row: 1/2;
+
+
+@media (max-width: 1024px) {
+   nav {
+    display: flex;
+    flex-direction: column;
+    gap: 
+    10px;
 }
-#car3{
+}
+
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+p {
+    font-size: 20px;
+}
+
+#p1 {
+    color: rgb(35, 3, 3);
+    font-weight: bold;
+}
+
+#p2 {
+    font-style: italic;
+    font-size: 30px;
+}
+#p3 {
     grid-row: 2/3;
 }
-#car4{
-    grid-row: 2/3;
-}*/
+
+.pclass {
+    font-size: x-large;
+}
+
+.grid {
+    display: grid;
+    
+}
+@media (min-width: 768px) {
+    .grid {
+        display:gird;
+        gird-template-columns: 33% 33% 33%;
+    }
+}
+
+.grid div {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.car {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.car img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
