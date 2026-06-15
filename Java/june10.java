@@ -97,7 +97,7 @@ public class june10 {
 
     public static void main(String[] args) {
 
-       /* Scanner sc = new Scanner(System.in);
+       Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number to check for Armstrong number: ");
         int h = sc.nextInt();
         amstrong_number(h);
@@ -117,7 +117,7 @@ public class june10 {
         int m = sc.nextInt();
         mathfunction(a, b);//task1
         perfect_number(n);//task2
-       */ prime_number(5);//task3
+       prime_number(5);//task3
         prime_method1(5);
 
         //sc.close();

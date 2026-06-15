@@ -27,6 +27,13 @@ public class june09 {
         }
        
     }
+    public static int product_1(int k,int h,int d){
+        int sum=k*h*d;
+        return sum;
+
+
+
+    }
      public static void problem(String vowelString){
         int count=0;
         int n=vowelString.length();
@@ -112,7 +119,9 @@ public class june09 {
         //methods(name,para);
         
         
-        problem(vowelString);
+        //problem(vowelString);
+       int d= product_1(5456, 999,79 );
+       System.out.println(d);
     }
        
 }
